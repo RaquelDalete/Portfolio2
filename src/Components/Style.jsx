@@ -113,7 +113,7 @@ margin: 1rem;
 
 
 
-@media(min-width: 320px) and (max-width: 768px)
+@media(min-width: 320px) and (max-width: 768px){
 h2{
     text-align: center;
     font-size: 1.5rem;
@@ -331,7 +331,7 @@ h1{
 }
 `
 export const P = styled.p`
-font-size:1rem;
+font-size:1.3rem;
 color:#c8a6c2;;
 font-family: "Arvo", serif;
   font-weight: 400;
