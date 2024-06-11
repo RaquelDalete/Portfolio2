@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+ import styled from 'styled-components';
 
 
 //----ESTILIZAÇÃO DA NAVEGAÇÃO
@@ -31,7 +31,7 @@ a{
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.5rem;
-    color:#f6f6f4;
+    color:#a461a7;
     font-family: "Montserrat Alternates", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -98,6 +98,7 @@ h1{
 `
 
 export const Img = styled.img`
+width: 5vw;
 margin:2rem;
 margin-top: 12rem;
 `;
@@ -354,13 +355,14 @@ width:100%;
     flex-wrap:wrap;
     justify-content: space-evenly;
 
+
     @media (min-width: 320px) and (max-width: 768px){
         height: 190vh;
     }
 
 
 img{
-    width:20vw;
+    width:30vw;
 
     @media(min-width: 320px) and (max-width: 768px){
         widht:50vw;
@@ -404,8 +406,9 @@ export const Div = styled.div`
 display:flex;
 flex-direction: column;
 align-items:center;
-flex-wrap: wrap;
+flex:0 1 250px;
 padding: 1rem;
+margin: 1rem;
 
 `
 export const ImgP = styled.img`
