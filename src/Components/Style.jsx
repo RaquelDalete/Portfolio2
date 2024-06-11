@@ -371,6 +371,7 @@ img{
 
 h2{
     font-size:1.2rem ;
+    margin: 1rem;
     color:#f6f6f1;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -391,6 +392,7 @@ h3{
     font-optical-sizing: auto;
     font-weight: <weight>;
     font-style: normal;
+    margin-top:auto;
 
 @media(min-width: 320px) and (max-width: 768px){
 
