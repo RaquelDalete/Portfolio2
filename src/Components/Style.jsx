@@ -1,7 +1,9 @@
- import styled from 'styled-components';
+import styled from 'styled-components';
 
 
 //----ESTILIZAÇÃO DA NAVEGAÇÃO
+
+
 
 export const Nav = styled.nav`
 width: 100vw;
@@ -51,6 +53,12 @@ export const Perfil = styled.img`
     height: 40vh;
     border-radius: 50%;
     
+
+    @media (min-width: 320px) and (max-width: 768px){
+        width: 15vw;
+        height: 20vh;
+    }
+    
 `;
 
 export const SectionInicio = styled.main`
@@ -58,12 +66,13 @@ display: flex;
 width:100vw;
 height:100vh;
 background-color:#2d2a2a;
-justify-content:space-evenly;
+justify-content: space-evenly;
 align-items: center;
 padding-top: 3rem;
 
 @media (min-width: 320px) and (max-width: 768px){
-        height: 120vh;
+        height: 100vh;
+        padding-top: 0;
     }
 h2{
     color:#c8a6c2;
@@ -74,6 +83,7 @@ h2{
   
     @media (min-width: 320px) and (max-width: 768px){
         font-size:1rem;
+       
     }
     
 
@@ -101,6 +111,11 @@ export const Img = styled.img`
 width: 5vw;
 margin:2rem;
 margin-top: 12rem;
+
+@media(min-width: 320px) and (max-width: 768px){
+    width: 8vw;
+    margin-top: 5rem;
+}
 `;
 
 export const ContainerDivs = styled.section`
@@ -120,9 +135,6 @@ h2{
     font-size: 1.5rem;
 }
 
-    img{
-        width: 5vw;
-    }
 }
 `
 
@@ -181,15 +193,16 @@ h2{
 
 @media(min-width: 320px) and (max-width: 768px){
     height:90vh;
-    width:50vw;
+    width:70vw;
   h2{
-      font-size:1em;
+      font-size:1.5em;
   }
 }
 
 @media(min-width: 320px) and (max-width: 768px){
     h3{
-        font-size:1rem; 
+        font-size:1.2rem; 
+        margin: 1rem;
     }
 }
 
@@ -236,7 +249,7 @@ img{
 }
 
 @media(min-width: 320px) and (max-width: 768px){
-    margin:1rem;
+    margin:1.5rem;
 }
 
 `;
@@ -262,6 +275,7 @@ h3{
 
 @media(min-width: 320px) and (max-width: 768px){
     font-size:1.2rem;
+    margin: 2rem;
 }
 }
 
@@ -272,7 +286,7 @@ img{
 @media(min-width: 320px) and (max-width: 768px){
     
         width:10vw;
-        margin:0.2rem;
+        margin:0rem;
 
 }
 }
@@ -288,8 +302,8 @@ li{
   font-style: normal;
     
     @media(min-width: 320px) and (max-width: 768px){
-       margin:1rem;
-        font-size:1.2rem;
+       margin:3rem;
+        font-size:1.5rem;
         text-align:center;
         list-style:none;
     }
@@ -301,7 +315,7 @@ export const Ul = styled.ul`
 color:black;
 `
 
-export const SectionPA =styled.section`
+export const SectionPA = styled.section`
 
 background-color: #2d2a2a;
 border: solid 1rem #4c1040;
@@ -320,15 +334,18 @@ height: 50vh;
 padding:4rem;
 
 h1{
-    color:#c8a6c2;;
+    color:#c8a6c2;
     font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
+  text-align: center;
+  margin: 0.8rem;
 }
 
 @media(min-width: 320px) and (max-width: 768px){
-  height:80vh;
+  height:90vh;
+  
 }
 `
 export const P = styled.p`
@@ -340,7 +357,7 @@ font-family: "Arvo", serif;
 
 
 @media(min-width: 320px) and (max-width: 768px){
-    font-size:0.8rem;
+    font-size:0.9rem;
     text-align: center;
 }
 `
@@ -357,7 +374,7 @@ width:100%;
 
 
     @media (min-width: 320px) and (max-width: 768px){
-        height: 190vh;
+        height: 24git 0vh;
     }
 
 
@@ -365,7 +382,7 @@ img{
     width:30vw;
 
     @media(min-width: 320px) and (max-width: 768px){
-        widht:50vw;
+        width: 60vw;
     }
 }
 
@@ -380,7 +397,7 @@ h2{
 
 @media(min-width: 320px) and (max-width: 768px){
 
-    font-size:1rem;
+    font-size:1.3rem;
 }
 }
 
@@ -396,7 +413,7 @@ h3{
 
 @media(min-width: 320px) and (max-width: 768px){
 
-    font-size:0.8rem;
+    font-size:1rem;
     text-align: center;
     
 }
